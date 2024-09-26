@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock%}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+    <div class="navbar_main" style="background-color: {{ navbar_color }}" >
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong>
+                <a href="{% url 'account' %}" class="no-style">Your account</a>
+            </strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong>
+                <a href="{% url 'events' %}" class="no-style">Events</a>
+                </strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong>
+                <a href="{% url 'main' %}" class="no-style">Main Page</a>
+            </strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong>
+             <a href="{% url 'talktous' %}" class="no-style">Talk to us</a>
+            </strong>
+        </div>
+        <div id="search">
+              <img src="{% static 'images/searcher.png' %}" alt="Image" class="btn">
+            <strong aria-placeholder="Search" style="color : rgba(156, 156, 156, 1);">Search</strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong>
+                <a href="{% url 'posts' %}" class="no-style">Posts</a>
+                </strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong><a href="{% url 'books' %}" class="no-style">Books</a></strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong><a href="{% url 'archieve' %}" class="no-style">Archieve</a></strong>
+        </div>
+        <div class="links_next_page">
+            <img src="{% static 'images/btn.png' %}" alt="Image" class="btn">
+            <strong><a href="{% url 'poets' %}" class="no-style">Poets</a></strong>
+        </div>
+    </div>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,57 @@
+.navbar_main{
+    font-family: Kalam;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 100vw;
+    background-color: rgba(172, 225, 187, 1);
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.links_next_page {
+    display: inline-block;
+    background-color: white;
+    width: 130px;
+    border: solid 1px white;
+    border-radius: 30px;
+    height: 20px; /* Ensure this height is appropriate for your content */
+   /* Center text horizontally */
+    vertical-align: middle; /* Align vertically if needed */
+}
+
+.btn {
+
+    height: 18px; /* Adjusted for visibility */
+    width: 18px; /* Adjusted for visibility */
+    left: 0px;
+    margin-bottom: 5px;
+    top: 0px;
+    vertical-align: middle; /* Aligns the image vertically with text */
+    margin-left: 8px; /* Space between image and text */
+}
+#search{
+    background-color: white;
+    width:200px;
+    border: solid 1px white;
+    border-radius: 30px;
+    height:20px;
+    text-align: center
+}
+
+.no-style {
+    color: inherit;
+    text-decoration: none;
+    }
+
+.background_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    z-index: -1; /* Ensures the image stays behind the navbar */
+}
