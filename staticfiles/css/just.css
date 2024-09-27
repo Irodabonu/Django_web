@@ -1,0 +1,28 @@
+/* Add this to your existing CSS */
+
+/* Slider container */
+.slider {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 70vh; /* Set the height as needed */
+    overflow: hidden; /* Hide overflowing slides */
+}
+
+/* Individual slide */
+.slide {
+    position: absolute; /* Position absolute to allow sliding */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 100%; /* Start off-screen to the right */
+    transition: left 0.5s ease; /* Smooth transition for slide effect */
+}
+
+/* Active slide visibility */
+.slide.active {
+    left: 0; /* Position active slide to the center */
+}
+
+.slide.hidden {
+    left: -100%; /* Move hidden slides out of view to the left */
+}
