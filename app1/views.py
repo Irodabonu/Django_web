@@ -10,13 +10,13 @@ def eventspage(request):
     return render(request, 'events_page.html', {'navbar_color': 'rgba(109, 162, 166, 1)'})
 
 def talk_to_us(request):
-    return render(request, 'talk_to_us_page.html')
+    return render(request, 'talk_to_us_page.html', {'navbar_color': 'rgba(147, 200, 144, 1)'})
 
 def posts(request):
     return render(request, 'posts_page.html', {'navbar_color': 'rgba(101, 104, 104, 1)'})
 
 def books(request):
-    return render(request, 'books_page.html', {'navbar_color': 'rgba(101, 104, 104, 1)'})
+    return render(request, 'books_page.html', {'navbar_color': 'rgba(165, 145, 100, 1)'})
 
 def archieve(request):
     return render(request, 'archieve_page.html',{'navbar_color': 'rgba(148, 139, 122, 1)'})
@@ -28,4 +28,7 @@ def poets(request):
 
 
 
+
+def just(request):
+    return render(request, 'just.html', {'navbar_color': 'rgba(101, 104, 104, 1)'})
 
